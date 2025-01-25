@@ -1,0 +1,91 @@
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    background-color: #6523f2;
+    padding-bottom:40px;
+    overflow:hidden;
+    border-bottom: solid 10px rgb(26, 5, 46);
+}
+
+h1{
+    position:absolute;
+    top:35px;
+    left: 920px;
+    right: 500px;
+    font-family: "Retro Gaming";
+    color:rgb(26, 5, 46);
+    font-size: 50px;
+    font-style: italic;
+    
+}
+
+
+@font-face {
+    font-family: "Retro Gaming";
+    src: url("https://db.onlinewebfonts.com/t/4c19fc875e7ba1e6831129de3ab5ac0b.eot");
+    src: url("https://db.onlinewebfonts.com/t/4c19fc875e7ba1e6831129de3ab5ac0b.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/4c19fc875e7ba1e6831129de3ab5ac0b.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/4c19fc875e7ba1e6831129de3ab5ac0b.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/4c19fc875e7ba1e6831129de3ab5ac0b.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/4c19fc875e7ba1e6831129de3ab5ac0b.svg#Retro Gaming")format("svg");
+}
+
+sub{
+    font-size: 20px;
+    font-style: italic;
+    font-family:Impact;
+    position:absolute;
+    top:135px;
+    left: 920px;
+    right: 500px;
+    
+}
+
+
+ul{
+  list-style:none;
+}
+
+.desplegar > li {
+  float:left;
+}
+
+.desplegar li a {
+  background-color:#000;
+  color:#fff;
+  text-decoration:none;
+  padding:10px 12px;
+  display:block;
+}
+
+.desplegar li a:hover {
+  background-color:#434343;
+}
+
+.desplegar li ul {
+  display:none;
+  position:absolute;
+  min-width:140px;
+}
+
+.desplegar li:hover > ul {
+  display:block;
+}
+
+.desplegar li ul li {
+  position:relative;
+}
+
+.desplegar li ul li ul {
+  right:-140px;
+  top:0px;
+}
+
+.imagen{
+  position:relative;
+  left: 500px;
+  width:200px;
+  height:200px;
+}
