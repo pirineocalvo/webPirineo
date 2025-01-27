@@ -12,13 +12,12 @@ header{
 h1{
     position:absolute;
     top:35px;
-    left: 920px;
+    left: 940px;
     right: 500px;
     font-family: "Retro Gaming";
     color:rgb(26, 5, 46);
     font-size: 50px;
     font-style: italic;
-    
 }
 
 
@@ -38,7 +37,7 @@ sub{
     font-family:Impact;
     position:absolute;
     top:135px;
-    left: 920px;
+    left: 940px;
     right: 500px;
     
 }
@@ -88,4 +87,39 @@ ul{
   left: 500px;
   width:200px;
   height:200px;
+}
+
+#bloqueIzq{
+  background-color: #434343;
+  position: fixed;
+  top:270px;
+  left:0;
+  height: 100vh;
+  padding-right:200px;
+}
+
+#bloqueDcha{
+  background-color: #434343;
+  position: fixed;
+  top:270px;
+  right:0;
+  height: 100vh;
+  padding-left:200px;
+}
+
+#centro{
+  width:75%;
+  margin-top:300px;
+  margin-right:auto;
+  margin-left:auto;
+  margin-bottom: 50px;
+}
+
+footer{
+  position: fixed;
+  background-color: #6523f2;
+  bottom:0;
+  left:0;
+  right:0;
+  margin-top: 50px;
 }
