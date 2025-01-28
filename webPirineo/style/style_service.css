@@ -1,0 +1,54 @@
+#formulario{
+    margin-top: 10px;
+    margin-left:300px;
+    background-color: blue;
+    overflow:hidden;
+    padding-right:140px;
+    padding-left:140px;
+    padding-bottom: 20px;
+    text-align: left;
+    float:left;
+    border-radius: 7%;
+    font-family:'Trebuchet MS';
+}
+
+h3{
+    text-align:center;
+}
+
+main{
+    background-image: url("../img/backgroundService.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:absolute;
+    top: 164px;
+    left:0;
+    right:0;
+    bottom:0;
+}
+
+.etiquetasInput {
+    display: inline-block;
+    margin-right: 39px;
+    width: 20%;
+}
+
+.etiquetaCodPostal{
+    margin-right: 3px;
+}
+
+.etiquetaFechaNac{
+    margin-right: 9px;
+    width: 20%;
+}
+
+.etiquetaSexo{
+    margin-right: 65px;
+}
+
+.inputSexo{
+    padding-right:20px;
+}
+.inputOtra{
+    padding-right:107px;
+}

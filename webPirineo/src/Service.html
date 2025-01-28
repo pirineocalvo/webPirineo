@@ -8,24 +8,36 @@
         <meta name="author" content="Héctor Corrales Pérez" />
         <meta name="keywords" content="Pirineo, viedeojuegos, españa"/>
         <link rel="stylesheet" type="text/css" href="../style/style.css">
+        <link rel="stylesheet" type="text/css" href="../style/style_service.css">
         <link href="https://db.onlinewebfonts.com/c/4c19fc875e7ba1e6831129de3ab5ac0b?family=Retro+Gaming" rel="stylesheet">
     </head>
     <body>
+      <header>
+        <nav>
+            <ul class="desplegar">
+              <li><a href="./Index.html">Inicio</a></li>
+            </ul>
+        </nav>
+        <img class="imagen" src="../img/Pirineo.jpg" alt="Logo de Pirineo"/>
+        <h1>PIRINEO</h1>
+        <sub>Empresa de desarrollo de videojuegos</sub>
+    </header>
+    <main>
         <div id="formulario">
             <h3>Contacta con nosotros</h3>
             <form action="./Index.html" method="post">
-              <label for="nombre"> Nombre </label>
-              <input type="text" name="nombre" id="nombre" required/> <br>
-              <label for="apellidos"> Apellidos </label>
-              <input type="text" name="apellidos" id="apellidos" required/> <br>
-              <label for="dni"> DNI </label>
-              <input type="text" name="dni" id="dni" pattern="\d{8}[A-Z]{1}" required/> <br>
-              <label for="direccion"> Dirección </label>
-              <input type="text" name="direccion" id="direccion" pattern="C/[A-z\s]+ Nº\d+ P[A-Z]" required/> <br>
-              <label for="ciudad"> Ciudad </label>
-              <input type="text" name="ciudad" id="ciudad" required/> <br>
-              <label for="codPostal"> Código Postal </label>
-              <input type="text" name="codPostal" id="codPostal" list="sugerenciasCodPostal" maxlength="5" pattern="\d{5}" required/> <br>
+              <label for="nombre" class="etiquetasInput"> Nombre </label>
+              <input type="text" name="nombre" id="nombre" required/> <br><br>
+              <label for="apellidos" class="etiquetasInput"> Apellidos </label>
+              <input type="text" name="apellidos" id="apellidos" required/> <br><br>
+              <label for="dni" class="etiquetasInput"> DNI </label>
+              <input type="text" name="dni" id="dni" pattern="\d{8}[A-Z]{1}" required/> <br><br>
+              <label for="direccion" class="etiquetasInput"> Dirección </label>
+              <input type="text" name="direccion" id="direccion" pattern="C/[A-z\s]+ Nº\d+ P[A-Z]" required/> <br><br>
+              <label for="ciudad" class="etiquetasInput"> Ciudad </label>
+              <input type="text" name="ciudad" id="ciudad" required/> <br><br>
+              <label for="codPostal" class="etiquetaCodPostal"> Código Postal </label>
+              <input type="text" name="codPostal"  id="codPostal" list="sugerenciasCodPostal" maxlength="5" pattern="\d{5}" required/> <br><br>
               <datalist id="sugerenciasCodPostal">
                 <option value="28001"></option>
                 <option value="08001"></option>
@@ -33,21 +45,21 @@
                 <option value="50001"></option>
                 <option value="37002"></option>
               </datalist>
-              <label for="pais"> País </label>
-              <input type="text" name="pais" id="pais" required/> <br>
-              <label for="fechaNac">Fecha de nacimiento</label>
-              <input type="date" name="fechaNac" id="fechaNac"> <br>
-              <label for="email"> Email </label>
-              <input type="text" name="email" id="email" placeholder="correo@correo.es"/> <br>
-              <label for="contrasenna"> Contraseña </label>
-              <input type="text" name="contrasenna" id="contrasenna" pattern="_[A-z]{1,7}_\w{5}&\d{2}" required/> <br>
-              <label for="sexo"  class="sexo"> Sexo </label>
-              <select name="sexo" id="sexo" required>
+              <label for="pais" class="etiquetasInput"> País </label>
+              <input type="text" name="pais" id="pais" required/> <br><br>
+              <label for="fechaNac" class="etiquetaFechaNac">Fecha de nacimiento</label>
+              <input type="date" name="fechaNac" id="fechaNac"> <br><br>
+              <label for="email" class="etiquetasInput"> Email </label>
+              <input type="text" name="email" id="email" placeholder="correo@correo.es"/> <br><br>
+              <label for="contrasenna" class="etiquetasInput"> Contraseña </label>
+              <input type="text" name="contrasenna" id="contrasenna" pattern="_[A-z]{1,7}_\w{5}&\d{2}" required/> <br><br>
+              <label for="sexo" class="etiquetaSexo"> Sexo </label>
+              <select name="sexo" id="sexo" class="inputSexo" required>
                 <option value="" disabled selected>Selecciona una opción</option>
                 <option value="0">Mujer</option>
                 <option value="1">Hombre</option>
                 <option value="2">Otro</option>
-              </select>  <br>
+              </select>  <br><br>
               <label for="aficiones">Selecciona tu afición favorita:</label><br>
               <input type="radio" id="musica" name="aficion" value="musica" required>
               <label for="musica">Música</label><br>
@@ -57,11 +69,15 @@
               <label for="deporte">Deporte</label><br>
               <input type="radio" id="otra" name="aficion" value="otra" required>
               <label for="otra">Otra: </label><br>
-              <input type="text" id="otra_aficion" name="otra_aficion" placeholder="Escribe tu afición"><br><br>
+              <input type="text" id="otra_aficion" name="otra_aficion" class="inputOtra" placeholder="Escribe tu afición"><br><br>
               <button type="submit">Enviar</button>
               <button type="reset">Borrar</button>
               <a href="./Index.html"> <button type="button">Cancelar</button></a>
             </form>
           </div>
+      </main>
+          <footer>
+            <p>Pie de página</p>
+        </footer>
     </body>
 </html>
