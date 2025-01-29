@@ -1,7 +1,7 @@
 #formulario{
     margin-top: 10px;
     margin-left:300px;
-    background-color: blue;
+    background: linear-gradient(45deg, #350542, #d33fe0);
     overflow:hidden;
     padding-right:140px;
     padding-left:140px;

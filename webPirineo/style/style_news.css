@@ -1,0 +1,48 @@
+main{
+    margin-top: 220px;
+    text-align:justify;
+    margin-left:10px;
+    margin-right:10px;
+}
+
+#recientes{
+    float: left;
+    width: 60%;
+}
+
+#universidades{
+    margin-left: 20px;
+}
+
+#proximamente{
+    position:relative;
+    top:50px;
+    left:750px;
+    right:0;
+    width: 60%;
+}
+
+#playstationYmotor{
+    margin-right:20px;
+    margin-left:20px;
+}
+
+#recientes{
+    float: left;
+    width: 60%;
+}
+
+#universidadesYtokio{
+    margin-left: 20px;
+}
+
+#mensual{
+    margin-top:100px;
+    float: left;
+    width: 60%;
+}
+
+#goty{
+    margin-left: 20px;
+    margin-bottom:100px;
+}

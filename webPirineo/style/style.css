@@ -4,14 +4,14 @@ header{
     left:0;
     right:0;
     background-color: #6523f2;
-    padding-bottom:100px;
+    padding-bottom:170px;
     overflow:hidden;
     border-bottom: solid 10px rgb(26, 5, 46);
 }
 
 h1{
     position:absolute;
-    top:35px;
+    top:50px;
     left: 940px;
     right: 500px;
     font-family: "Retro Gaming";
@@ -37,55 +37,121 @@ sub{
     font-style: italic;
     font-family:Impact;
     position:absolute;
-    top:85px;
+    top:95px;
     left: 940px;
     right: 500px;
     
 }
 
+:root {
+  --color-primario: #4A148C; 
+  --color-secundario: #7B1FA2; 
+  --color-terciario: #AB47BC; 
+  --color-fondo: #EDE7F6; 
+  --color-texto: #FFFFFF; 
+  --color-hover: #6A1B9A; /
+}
 
-ul{
-  list-style:none;
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.desplegar {
+  position: absolute;
+  top:10px;
+  left:20px;
+  background-color: var(--color-primario);
+  width: fit-content;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .desplegar > li {
-  float:left;
+  position: relative;
 }
 
 .desplegar li a {
-  background-color:#000;
-  color:#fff;
-  text-decoration:none;
-  padding:10px 12px;
-  display:block;
+  display: flex;
+  padding: 12px 20px;
+  color: var(--color-texto);
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
 }
 
 .desplegar li a:hover {
-  background-color:#434343;
+  background-color: var(--color-hover);
 }
 
-.desplegar li ul {
-  display:none;
+.subMenuPrincipal {
+  display: none; 
+  position: absolute;
+  top: 100%;
+  left: 0;
+  flex-direction: row; 
+  gap: 10px; 
+  background-color: var(--color-secundario);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px; 
+}
+
+.desplegar:hover > li > .subMenuPrincipal {
+  display: flex;
+}
+
+.subMenuPrincipal li {
+  position: relative; 
+}
+
+.subMenuPrincipal li a {
+  padding: 10px 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
+}
+
+.subMenuPrincipal li:last-child a {
+  border-bottom: none; 
+}
+
+.subMenuNoticias {
+  display: none;
+  position: absolute;
+  top: 100%; 
+  left: 0;
+  min-width: 160px;
+  background-color: var(--color-terciario);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.desplegarNoticias:hover > .subMenuNoticias {
+  opacity: 1;
+  visibility: visible;
+  display: flex; 
+}
+
+.subMenuNoticias li a {
+  padding: 10px 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
+}
+
+.subMenuNoticias li:last-child a {
+  border-bottom: none; 
+}
+
+.logoGrande{
   position:absolute;
-  min-width:140px;
-}
-
-.desplegar li:hover > ul {
-  display:block;
-}
-
-.desplegar li ul li {
-  position:relative;
-}
-
-.desplegar li ul li ul {
-  right:-140px;
-  top:0px;
-}
-
-.imagen{
-  position:absolute;
-  top:5px;
+  top:15px;
   right:1000px;
   width:130px;
   height:130px;
@@ -94,7 +160,7 @@ ul{
 #bloqueIzq{
   background-color: #434343;
   position: fixed;
-  top:164px;
+  top:180px;
   left:0;
   height: 100vh;
   padding-right:200px;
@@ -103,7 +169,7 @@ ul{
 #bloqueDcha{
   background-color: #434343;
   position: fixed;
-  top:164px;
+  top:180px;
   right:0;
   height: 100vh;
   padding-left:200px;
@@ -124,5 +190,34 @@ footer{
   left:0;
   right:0;
   margin-top: 50px;
+  display:flex;
+  padding-left: 750px;
+}
+
+footer > p{
+  margin-right: 100px;
+}
+
+.telefono{
+  position:absolute;
+  top:10px;
+  left:710px;
+  width: 30px;
+  height:30px;
+}
+
+.carta{
+  position:absolute;
+  top:10px;
+  left:950px;
+  width: 30px;
+  height:30px;
+}
+
+.logoPequeño{
+  position:absolute;
+  right:20px;
+  width: 50px;
+  height:50px;
 }
 
