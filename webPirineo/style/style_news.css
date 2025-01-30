@@ -5,39 +5,42 @@ main{
     margin-right:10px;
 }
 
-#recientes{
-    float: left;
-    width: 60%;
+#universidades{
+    margin-left:20px;
+    display:flex;
 }
 
-#universidades{
+#tokio{
     margin-left: 20px;
+    display:flex;
+    width:130%;
 }
 
 #proximamente{
-    position:relative;
-    top:50px;
-    left:750px;
-    right:0;
-    width: 60%;
+   width:60%;
+   margin-top:50px;
 }
 
-#playstationYmotor{
+#playstation{
     margin-right:20px;
     margin-left:20px;
+    display:flex;
 }
+
+#motor{
+    margin-right:20px;
+    margin-left:20px;
+    display:flex;
+}
+
 
 #recientes{
     float: left;
     width: 60%;
 }
 
-#universidadesYtokio{
-    margin-left: 20px;
-}
-
 #mensual{
-    margin-top:100px;
+    margin-top:50px;
     float: left;
     width: 60%;
 }
@@ -45,4 +48,61 @@ main{
 #goty{
     margin-left: 20px;
     margin-bottom:100px;
+}
+
+.uniBarcelona{
+    border-radius:50%;
+    margin-left:20px;
+}
+
+h4{
+    margin-left: 20px;
+}
+
+.panoramicaTokio{
+    border-radius:50%;
+    margin-left:40px;
+    width:350px;
+    height:250px;
+}
+
+#goty{
+    margin-left:20px;
+    display:flex;
+}
+
+.gameAwards{
+    margin-left:40px;
+    width: 400px;
+    height:300px;
+}
+
+.pirineoXplay{
+    width:25%;
+    height:25%;
+    margin-right:50px;
+    margin-top:20px;
+}
+
+.engine{
+    width:25%;
+    height:25%;
+    margin-bottom:20px;
+}
+
+.anuncio3{
+    padding-right:350px;
+    padding-bottom:690px;
+    margin-right:20px;
+    float:left;
+    background-color:grey;
+}
+
+.anuncio4{
+    margin-top:740px;
+    padding-right:350px;
+    padding-bottom:1090px;
+    margin-right:20px;
+    float:right;
+    background-color:grey;
 }
