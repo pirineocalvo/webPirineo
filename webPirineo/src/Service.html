@@ -23,60 +23,61 @@
         <sub>Empresa de desarrollo de videojuegos</sub>
     </header>
     <main>
-        <div id="formulario">
-            <h3>Contacta con nosotros</h3>
-            <form action="./Index.html" method="post">
-              <label for="nombre" class="etiquetasInput"> Nombre </label>
-              <input type="text" name="nombre" id="nombre" required/> <br><br>
-              <label for="apellidos" class="etiquetasInput"> Apellidos </label>
-              <input type="text" name="apellidos" id="apellidos" required/> <br><br>
-              <label for="dni" class="etiquetasInput"> DNI </label>
-              <input type="text" name="dni" id="dni" pattern="\d{8}[A-Z]{1}" required/> <br><br>
-              <label for="direccion" class="etiquetasInput"> Dirección </label>
-              <input type="text" name="direccion" id="direccion" pattern="C/[A-z\s]+ Nº\d+ P[A-Z]" required/> <br><br>
-              <label for="ciudad" class="etiquetasInput"> Ciudad </label>
-              <input type="text" name="ciudad" id="ciudad" required/> <br><br>
-              <label for="codPostal" class="etiquetaCodPostal"> Código Postal </label>
-              <input type="text" name="codPostal"  id="codPostal" list="sugerenciasCodPostal" maxlength="5" pattern="\d{5}" required/> <br><br>
-              <datalist id="sugerenciasCodPostal">
-                <option value="28001"></option>
-                <option value="08001"></option>
-                <option value="41001"></option>
-                <option value="50001"></option>
-                <option value="37002"></option>
-              </datalist>
-              <label for="pais" class="etiquetasInput"> País </label>
-              <input type="text" name="pais" id="pais" required/> <br><br>
-              <label for="fechaNac" class="etiquetaFechaNac">Fecha de nacimiento</label>
-              <input type="date" name="fechaNac" id="fechaNac"> <br><br>
-              <label for="email" class="etiquetasInput"> Email </label>
-              <input type="text" name="email" id="email" placeholder="correo@correo.es"/> <br><br>
-              <label for="contrasenna" class="etiquetasInput"> Contraseña </label>
-              <input type="text" name="contrasenna" id="contrasenna" pattern="_[A-z]{1,7}_\w{5}&\d{2}" required/> <br><br>
-              <label for="sexo" class="etiquetaSexo"> Sexo </label>
-              <select name="sexo" id="sexo" class="inputSexo" required>
-                <option value="" disabled selected>Selecciona una opción</option>
-                <option value="0">Mujer</option>
-                <option value="1">Hombre</option>
-                <option value="2">Otro</option>
-              </select>  <br><br>
-              <label for="aficiones">Selecciona tu afición favorita:</label><br>
-              <input type="radio" id="musica" name="aficion" value="musica" required>
-              <label for="musica">Música</label><br>
-              <input type="radio" id="videojuegos" name="aficion" value="videojuegos" checked required>
-              <label for="videojuegos">Videojuegos</label><br>
-              <input type="radio" id="deporte" name="aficion" value="deporte" required>
-              <label for="deporte">Deporte</label><br>
-              <input type="radio" id="otra" name="aficion" value="otra" required>
-              <label for="otra">Otra: </label><br>
-              <input type="text" id="otra_aficion" name="otra_aficion" class="inputOtra" placeholder="Escribe tu afición"><br><br>
-              <button type="submit">Enviar</button>
-              <button type="reset">Borrar</button>
-              <a href="./Index.html"> <button type="button">Cancelar</button></a>
-            </form>
+      <div id="formulario">
+        <h3>Contacta con nosotros</h3>
+        <form action="./Index.html" method="post">
+          <label for="nombre" class="etiquetasInput"> Nombre </label>
+          <input type="text" name="nombre" id="nombre" required/> <br><br>
+          <label for="apellidos" class="etiquetasInput"> Apellidos </label>
+          <input type="text" name="apellidos" id="apellidos" required/> <br><br>
+          <label for="dni" class="etiquetasInput"> DNI </label>
+          <input type="text" name="dni" id="dni" pattern="\d{8}[A-Z]{1}" required/> <br><br>
+          <label for="direccion" class="etiquetasInput"> Dirección </label>
+          <input type="text" name="direccion" id="direccion" pattern="C/[A-z\s]+ Nº\d+ P[A-Z]" required/> <br><br>
+          <label for="ciudad" class="etiquetasInput"> Ciudad </label>
+          <input type="text" name="ciudad" id="ciudad" required/> <br><br>
+          <label for="codPostal" class="etiquetaCodPostal"> Código Postal </label>
+          <input type="text" name="codPostal"  id="codPostal" list="sugerenciasCodPostal" maxlength="5" pattern="\d{5}" required/> <br><br>
+          <datalist id="sugerenciasCodPostal">
+            <option value="28001"></option>
+            <option value="08001"></option>
+            <option value="41001"></option>
+            <option value="50001"></option>
+            <option value="37002"></option>
+          </datalist>
+          <label for="pais" class="etiquetasInput"> País </label>
+          <input type="text" name="pais" id="pais" required/> <br><br>
+          <label for="fechaNac" class="etiquetaFechaNac">Fecha de nacimiento</label>
+          <input type="date" name="fechaNac" id="fechaNac"> <br><br>
+          <label for="email" class="etiquetasInput"> Email </label>
+          <input type="text" name="email" id="email" placeholder="correo@correo.es"/> <br><br>
+          <label for="contrasenna" class="etiquetasInput"> Contraseña </label>
+          <input type="text" name="contrasenna" id="contrasenna" pattern="_[A-z]{1,7}_\w{5}&\d{2}" required/> <br><br>
+          <label for="sexo" class="etiquetaSexo"> Sexo </label>
+          <select name="sexo" id="sexo" class="inputSexo" required>
+            <option value="" disabled selected>Selecciona una opción</option>
+            <option value="0">Mujer</option>
+            <option value="1">Hombre</option>
+            <option value="2">Otro</option>
+          </select>  <br><br>
+          <label for="aficiones">Selecciona tu afición favorita:</label><br>
+          <input type="radio" id="musica" name="aficion" value="musica" required>
+          <label for="musica">Música</label><br>
+          <input type="radio" id="videojuegos" name="aficion" value="videojuegos" checked required>
+          <label for="videojuegos">Videojuegos</label><br>
+          <input type="radio" id="deporte" name="aficion" value="deporte" required>
+          <label for="deporte">Deporte</label><br>
+          <input type="radio" id="otra" name="aficion" value="otra" required>
+          <label for="otra">Otra: </label><br>
+          <input type="text" id="otra_aficion" name="otra_aficion" class="inputOtra" placeholder="Escribe tu afición"><br><br>
+          <button type="submit">Enviar</button>
+          <button type="reset">Borrar</button>
+          <a href="./Index.html"> <button type="button">Cancelar</button></a>
+        </form>
           </div>
       </main>
       <footer>
+        <div class="barra-animada"></div>
         <img src="../img/telefono.png" class="telefono" alt="Tlfn"/>
         <p>Tlfn: +34 901 256 453</p>
         <img src="../img/carta.png" class="carta" alt="Carta"/>

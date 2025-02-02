@@ -1,3 +1,11 @@
+body{
+    background-image: url("../img/cave.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
 main{
     margin-top: 220px;
     text-align:justify;
@@ -5,58 +13,36 @@ main{
     margin-right:10px;
 }
 
+article > p{
+    background-color:rgba(127, 255, 212, 0.5);
+    padding:5px;
+    border-radius:5%;
+}
+
+#recientes{
+    float: left;
+    width: 60%;
+    margin-bottom:90px;
+}
+
 #universidades{
     margin-left:20px;
     display:flex;
+}
+
+.uniBarcelona{
+    border-radius:50%;
+    margin-left:10px;
+}
+
+.uniBarcelona:hover{
+    box-shadow: rgb(255, 187, 0) 10px 10px 10px;
 }
 
 #tokio{
     margin-left: 20px;
     display:flex;
     width:130%;
-}
-
-#proximamente{
-   width:60%;
-   margin-top:50px;
-}
-
-#playstation{
-    margin-right:20px;
-    margin-left:20px;
-    display:flex;
-}
-
-#motor{
-    margin-right:20px;
-    margin-left:20px;
-    display:flex;
-}
-
-
-#recientes{
-    float: left;
-    width: 60%;
-}
-
-#mensual{
-    margin-top:50px;
-    float: left;
-    width: 60%;
-}
-
-#goty{
-    margin-left: 20px;
-    margin-bottom:100px;
-}
-
-.uniBarcelona{
-    border-radius:50%;
-    margin-left:20px;
-}
-
-h4{
-    margin-left: 20px;
 }
 
 .panoramicaTokio{
@@ -66,15 +52,19 @@ h4{
     height:250px;
 }
 
-#goty{
-    margin-left:20px;
-    display:flex;
+.panoramicaTokio:hover{
+    box-shadow: rgb(20, 223, 250) 10px 10px 10px;
 }
 
-.gameAwards{
-    margin-left:40px;
-    width: 400px;
-    height:300px;
+#proximamente{
+   width:60%;
+   
+}
+
+#playstation{
+    margin-right:20px;
+    margin-left:20px;
+    display:flex;
 }
 
 .pirineoXplay{
@@ -84,14 +74,60 @@ h4{
     margin-top:20px;
 }
 
+.pirineoXplay:hover{
+    box-shadow: rgb(0, 0, 0) 10px 10px 10px;
+}
+
+#motor{
+    margin-right:20px;
+    margin-left:20px;
+    display:flex;
+}
+
 .engine{
     width:25%;
     height:25%;
     margin-bottom:20px;
+    margin-right:50px;
+    transition: border-radius 0.5s ease-in-out;
+}
+
+.engine:hover {
+    border-radius: 50%; 
+}
+
+#mensual{
+    margin-top:50px;
+    float: left;
+    width: 60%;
+}
+
+
+#goty{
+    margin-left:20px;
+    display:flex;
+    margin-bottom:100px;
+}
+
+.gameAwards {
+    margin-left: 20px;
+    width: 400px;
+    height: 300px;
+    transition: transform 0.3s ease-out;
+}
+
+.gameAwards:hover {
+    animation: alargar 2s ease-in-out; /* La duración sigue siendo 2s */
+}
+
+@keyframes alargar {
+    0% { transform: scaleX(1); }         /* Empieza con el tamaño normal */
+    50% { transform: scaleX(1.5); }      /* Se estira (1.5 veces su tamaño original) */
+    100% { transform: scaleX(1); }       /* Vuelve a su forma original */
 }
 
 .anuncio3{
-    padding-right:350px;
+    padding-right:300px;
     padding-bottom:690px;
     margin-right:20px;
     float:left;
@@ -99,10 +135,59 @@ h4{
 }
 
 .anuncio4{
-    margin-top:740px;
+    margin-top:840px;
     padding-right:350px;
-    padding-bottom:1090px;
+    padding-bottom:1290px;
     margin-right:20px;
     float:right;
     background-color:grey;
 }
+
+.h3Corto{
+    background-color:#fd43d5;
+    overflow: hidden;
+    display: inline-block;
+    padding: 10px 30px; 
+    text-align: center;
+    border: 2px solid black;
+    margin-left:10px;
+    transition: transform 1s ease, background-color 1s ease;
+}
+
+.h3Corto:hover{
+    transform: skew(-30deg);
+    background-color:#ae00ff;
+}
+
+.h3Largo {
+    background-color: #fd43d5;
+    overflow: hidden;
+    display: inline-block;
+    padding: 10px 30px; 
+    text-align: center;
+    border: 2px solid black;
+    margin-left:10px;
+    transition: transform 1s ease, background-color 1s ease;
+}
+
+.h3Largo:hover{
+    transform: skew(-30deg);
+    background-color:#ae00ff;
+}
+
+.h4Largo{
+    margin-left: 20px;
+    background-color:#fd43d5;
+    width:70%;
+    text-align:center;
+}
+
+.h4Corto{
+    margin-left: 20px;
+    background-color:#fd43d5;
+    width:58%;
+    text-align:center;
+}
+
+
+
