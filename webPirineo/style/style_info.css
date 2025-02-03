@@ -1,0 +1,52 @@
+main{
+    margin-top:200px;
+    margin-right:50px;
+    margin-left:50px;
+    text-align:justify;
+    background-color:rgba(240, 248, 255, 0.5);
+    padding:10px;
+    overflow:hidden;
+}
+body{
+    background-image: url("../img/fondoInfo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.introduccion{
+    width:80%;
+}
+
+.doremi{
+    width: 200px;
+    height: 200px;
+    position:absolute;
+    top:300px;
+    right:180px;
+}
+
+.doremi:hover{
+    box-shadow: rgb(54, 54, 54) 10px 10px 10px;
+}
+
+.nuevoJuego{
+    width:70%;
+    float:right;
+    margin-right:100px;
+}
+
+.magicHunter{
+    width: 350px;
+    height: 250px;
+    position:absolute;
+    top:500px;
+    left:120px;
+}
+
+.magicHunter:hover{
+    box-shadow: rgb(190, 34, 34) 10px 10px 10px;
+}
+
+.fin{
+    margin-top:300px;
+}

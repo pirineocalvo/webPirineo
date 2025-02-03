@@ -117,30 +117,39 @@ article > p{
 }
 
 .gameAwards:hover {
-    animation: alargar 2s ease-in-out; /* La duración sigue siendo 2s */
+    animation: alargar 2s ease-in-out; 
 }
 
 @keyframes alargar {
-    0% { transform: scaleX(1); }         /* Empieza con el tamaño normal */
-    50% { transform: scaleX(1.5); }      /* Se estira (1.5 veces su tamaño original) */
-    100% { transform: scaleX(1); }       /* Vuelve a su forma original */
+    0% { transform: scaleX(1); }         
+    50% { transform: scaleX(1.5); }      
+    100% { transform: scaleX(1); }       
 }
 
 .anuncio3{
-    padding-right:300px;
-    padding-bottom:690px;
     margin-right:20px;
     float:left;
     background-color:grey;
 }
 
+.anuncio3:hover{
+    box-shadow: rgb(87, 86, 86) 10px 10px 10px;
+}
+
+.imgAnuncio3{
+    height:690px;
+    width:300px;
+}
+
 .anuncio4{
-    margin-top:840px;
-    padding-right:350px;
-    padding-bottom:1290px;
+    margin-top:400px;
     margin-right:20px;
     float:right;
-    background-color:grey;
+    background-color:rgb(255, 255, 255);
+}
+
+.anuncio4:hover{
+    box-shadow: rgb(255, 255, 255) 10px 10px 10px;
 }
 
 .h3Corto{
